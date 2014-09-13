@@ -5,17 +5,17 @@ package jacobpackerhangman;
 //Name    :  <Jacob Packer>
 //Date    :  <9-5-2014>
 //This is my UI class that manipulates my HangMan Class.
-
+//THIS IS MY CHANGE IN THIS DOC
 public class Hangman 
 {
-    private int lives;
+    private int xlives;
     private String wordOfQuestion;
     private char [] wordDisplayedToUser;
     
     //The method below is my constructor.  It is used to asign all of my attributes, values.
     public Hangman (int livesX, String someWord)
     {
-        lives = livesX; 
+        xlives = livesX; 
         wordOfQuestion = someWord;  
         wordDisplayedToUser = wordOfQuestion.toCharArray();
         
@@ -44,7 +44,7 @@ public class Hangman
         }
         else
         {
-            lives--;
+            xlives--;
             return false;
         } 
     }
@@ -70,7 +70,7 @@ public class Hangman
     //Returns the current amount of lives
     public int getLives()
     {
-        return lives;
+        return xlives;
     }
     
     //Returns the unkown word that the user is trying to guess.
